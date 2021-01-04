@@ -12,10 +12,10 @@
             var slice = whatsapp.slice(1)
             var sliceTwo = whatsapp.slice(2)
             if(charWa == '6'){
-                document.getElementById("demo").innerHTML = "Silakan klik link di bawah ini <br>" + `https://wa.me/62${sliceTwo}`
+                location.href = `https://wa.me/62${sliceTwo}`
             }else{
                 if(charWa == '0'){
-                document.getElementById("demo").innerHTML = "Silakan klik link di bawah ini <br>" + `https://wa.me/62${slice}`
+                location.href = `https://wa.me/62${slice}`
                 }
             }   
         }
@@ -23,7 +23,7 @@
 </head>
 <body>
         <h1>Masukan nomor Handphone yang dituju</h1>
-        <input type="text" id="nomor">
+        <input type="number" id="nomor" placeholder="Masukan nomor tujuan">
         <button onclick="input()">Submit</button>
         <p id="demo"></p>
 </body>
